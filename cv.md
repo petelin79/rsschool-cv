@@ -37,6 +37,7 @@ competitive analyze, key accounts approach, strategy and business development.
 - Motivation and development scheme build up
 
 ## Skills
+
 - Python data analyses
 - HTML
 - CSS
@@ -44,19 +45,23 @@ competitive analyze, key accounts approach, strategy and business development.
 - MongoDB
 
 ## Code sample
+
 ```
 function bmi(weight, height) {
 
   const bmi = weight/(height*height);
-  
+
   return bmi <= 18.5 ? 'Underweight': bmi <= 25 ? 'Normal': bmi <= 30 ? 'Overweight': 'Obese';
 }
 
 ```
 
 ## Education
+
 - Master degree, Omsk state technical university, Omsk
 
 ## Languages
+
 **Russian** - native
+
 **English** - advanced
