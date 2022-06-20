@@ -63,5 +63,4 @@ function bmi(weight, height) {
 ## Languages
 
 - **Russian** - native
-
 - **English** - advanced
