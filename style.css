@@ -38,3 +38,7 @@ body {
 .section-item a:hover {
   color: #4d2323;
 }
+
+.bl-list {
+  margin-left: 15px;
+}
