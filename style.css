@@ -557,13 +557,108 @@ html {
 }
 /* header styles end*/
 
-/* intro styles start */
+/* plan styles start */
 
-.intro {
+.plan {
   height: 100vh;
   background: url(./assets/img/garrett-parker-DlkF4-dbCOU-unsplash.png)
     no-repeat;
-  background-size: cover;
+  padding-top: 122px;
 }
 
-/* intro styles end */
+.wrapper__plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 892px;
+  height: 422px;
+  margin-left: 120px;
+}
+
+.plan__title {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+
+  color: #ffffff;
+}
+
+.plan__descr {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.plan__search-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 892px;
+  height: 95px;
+
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+}
+
+.search-form__submit {
+  width: 228px;
+  height: 59px;
+  background: #0d606f;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: 0;
+}
+
+.search-form__field {
+  border: 0;
+  background-color: transparent;
+
+  width: 560px;
+  height: 22px;
+  margin-left: 41px;
+
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #f2785c;
+
+}
+.search-form__field::placeholder {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #f2785c;
+}
+
+.search-form__btn-text {
+  width: 163px;
+  height: 32px;
+
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+/* plan styles end */
