@@ -546,6 +546,11 @@ html {
   border-radius: 10px;
   border: 0;
 }
+
+.header__btn:hover, :focus{
+    background: #144953;
+    }
+
 .header__btn-txt {
   font-family: "Red Hat Text";
   font-style: normal;
@@ -618,6 +623,10 @@ html {
     0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: 0;
+}
+
+.search-form__submit:hover, :focus{
+background: #144953;
 }
 
 .search-form__field {
