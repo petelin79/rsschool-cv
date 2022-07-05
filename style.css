@@ -1,268 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+/* CSS reset block */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+    outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
 html {
-  scroll-behavior: smooth;
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
 }
 
-header {
-  position: absolute;
-  width: 1440px;
-  height: 90px;
-  left: 0px;
-  top: 0px;
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
 }
 
-.logo {
-  position: absolute;
-  width: 216px;
-  height: 31px;
-  left: 120px;
-  top: 25px;
-}
-.logo-svg {
-  position: absolute;
-  left: 8.33%;
-  right: 89.58%;
-  top: 0.7%;
-  bottom: 98.5%;
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
 }
 
-.logo-name {
-  position: absolute;
-  width: 180px;
-  height: 31px;
-  left: 50px;
-  top: -1px;
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
 
-  font-family: "Magra";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
-
-  color: #ffffff;
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 42px;
-  list-style: none;
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
 
-  position: absolute;
-  width: 527px;
-  height: 21px;
-  left: 494px;
-  top: 20px;
+figure {
+    margin: 0;
 }
 
-.nav-rect {
-  position: absolute;
-  width: 1440px;
-  height: 90px;
-  left: 0px;
-  top: 0px;
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
 
-  background: rgba(242, 120, 92, 0.7);
-  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+form {
+    margin: 0;
 }
 
-.nav-hiw {
-  width: 98px;
-  height: 21px;
+/**
+ * Define consistent border, margin, and padding.
+ */
 
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-
-  text-decoration: underline;
-  color: #ffffff;
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
 }
 
-.nav-pyt {
-  width: 105px;
-  height: 21px;
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
 
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-
-  color: #ffffff;
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
 }
 
-.nav-dist {
-  width: 95px;
-  height: 21px;
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
 
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-
-  color: #ffffff;
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
 }
 
-.nav-stories {
-  width: 103px;
-  height: 21px;
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
 
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-
-  color: #ffffff;
+button,
+input {
+    line-height: normal;
 }
 
-.frame {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 229px;
-  gap: 10px;
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
 
-  position: absolute;
-  width: 103px;
-  height: 41px;
-  left: 1217px;
-  top: 25px;
-
-  background: #0d606f;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-    0px 2px 3px rgba(13, 96, 111, 0.16);
-  border-radius: 10px;
+button,
+select {
+    text-transform: none;
 }
 
-.container {
-  max-width: 1440px;
-  align-items: center;
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
 }
 
-.section-trip {
-  position: absolute;
-  width: 892px;
-  height: 422px;
-  left: 120px;
-  top: 122px;
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
 }
 
-.trip-header {
-  position: absolute;
-  width: 700px;
-  height: 422px;
-  left: 0px;
-  top: -55px;
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
 
-  font-family: "Aleo";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 96px;
-
-  color: #ffffff;
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
 }
 
-.trip-text {
-  position: absolute;
-  width: 723px;
-  height: 24px;
-  left: 0px;
-  top: 220px;
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
 
-  font-family: "Aleo";
-  font-style: italic;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
-
-  /* identical to box height */
-
-  color: #ffffff;
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
 }
 
-.trip-search {
-  position: absolute;
-  width: 892px;
-  height: 95px;
-  left: 0px;
-  top: 290px;
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
 }
 
-.trip-search-block {
-  position: absolute;
-  width: 892px;
-  height: 95px;
-  left: 0px;
-  top: 290px;
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
 
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 16px;
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
 }
 
-.trip-search-text {
-  position: absolute;
-  width: 560px;
-  height: 22px;
-  left: 50px;
-  top: 30px;
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
 
-  font-family: "Aleo";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-
-  color: #f2785c;
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
 }
 
-.section-steps {
-  position: absolute;
-  width: 1177px;
-  height: 247px;
-  left: 131px;
-  top: 845px;
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-.section-dest {
-  position: absolute;
-  width: 2520px;
-  height: 1042px;
-  left: -540px;
-  top: 1189px;
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
 }
 
-.section-stories {
-  position: absolute;
-  width: 1201px;
-  height: 1322px;
-  left: 119px;
-  top: 2311px;
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
-.text-center {
-  text-align: center;
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
-.background {
-  position: absolute;
-  width: 1445px;
-  height: 3735px;
-  left: 0px;
-  top: 0px;
+img {
+    vertical-align: middle;
 }
-.bg-img {
-  position: absolute;
-  width: 1440px;
-  height: 765px;
-  left: 0px;
-  top: 0px;
 
-  background: url(./assets/garrett-parker-DlkF4-dbCOU-unsplash.png);
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* CSS reset block end*/
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+ 
