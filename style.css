@@ -466,7 +466,7 @@ html {
 
 /* header styles */
 .header {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -547,9 +547,10 @@ html {
   border: 0;
 }
 
-.header__btn:hover, :focus{
-    background: #144953;
-    }
+.header__btn:hover,
+:focus {
+  background: #144953;
+}
 
 .header__btn-txt {
   font-family: "Red Hat Text";
@@ -565,16 +566,17 @@ html {
 /* plan styles start */
 
 .plan {
-  height: 100vh;
+  height: 765px;
   background: url(./assets/img/garrett-parker-DlkF4-dbCOU-unsplash.png)
     no-repeat;
   padding-top: 122px;
+  margin-bottom: 80px;
 }
 
 .wrapper__plan {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   width: 892px;
   height: 422px;
@@ -625,8 +627,9 @@ html {
   border: 0;
 }
 
-.search-form__submit:hover, :focus{
-background: #144953;
+.search-form__submit:hover,
+:focus {
+  background: #144953;
 }
 
 .search-form__field {
@@ -644,7 +647,6 @@ background: #144953;
   line-height: 29px;
 
   color: #f2785c;
-
 }
 .search-form__field::placeholder {
   font-family: "Aleo";
@@ -671,3 +673,67 @@ background: #144953;
   color: #ffffff;
 }
 /* plan styles end */
+
+/* steps styles start */
+
+.steps__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 1177px;
+  height: 247px;
+  margin-left: 131px;
+}
+.steps__title {
+  text-align: center;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+
+  /* identical to box height */
+
+  color: #f2785c;
+}
+.step__card-block {
+  width: 100px;
+  height: 100px;
+
+  background: #f2785c;
+  border-radius: 16px;
+}
+
+.steps__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 154px;
+}
+
+.step__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step__card-img {
+  margin-left: 22%;
+  margin-top: 25%;
+}
+
+.step_card-text {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  /* identical to box height */
+
+  color: #0d606f;
+}
+
+/* steps styles end */
