@@ -466,7 +466,7 @@ html {
 
 /* header styles */
 .header {
-  /* position: fixed; */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -684,6 +684,7 @@ html {
   width: 1177px;
   height: 247px;
   margin-left: 131px;
+  margin-bottom: 97px;
 }
 .steps__title {
   text-align: center;
@@ -735,5 +736,130 @@ html {
 
   color: #0d606f;
 }
-
 /* steps styles end */
+
+/* destination styles start */
+.dest__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  height: 1042px;
+}
+
+.dest__title {
+  text-align: center;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+
+  /* identical to box height */
+
+  color: #f2785c;
+}
+
+.dest__carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 60px;
+  overflow: hidden;
+}
+.dest__carousel-card1 {
+  min-width: 800px;
+  height: 800px;
+  border-radius: 16px;
+  background: url(./assets/img/spain.jpg), #ffffff;
+}
+.dest__carousel-card2 {
+  min-width: 800px;
+  height: 800px;
+  border-radius: 16px;
+  background: url(./assets/img/japan.jpg), #ffffff;
+}
+.dest__carousel-card3 {
+  min-width: 800px;
+  height: 800px;
+  border-radius: 16px;
+  background: url(./assets/img/usa.jpg), #ffffff;
+}
+
+.dest__carousel-text {
+  margin-left: calc(50% - 108px / 2 - 331px);
+  margin-top: calc(50% - 42px / 2 + 339px);
+
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+
+  color: #ffffff;
+}
+.dest__slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 10px;
+
+  width: 80px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div_dest__slider-element1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: rgba(242, 120, 92, 0.5);
+}
+.div_dest__slider-element2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #f2785c;
+}
+.div_dest__slider-element3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: rgba(242, 120, 92, 0.5);
+}
+.dest__button {
+  width: 228px;
+  height: 59px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #0d606f;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: 0;
+}
+.dest__button:hover,
+:focus {
+  background: #144953;
+}
+
+.dest__button-text {
+  display: flex;
+  justify-content: space-evenly;
+}
+.dest__btn-txt {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+/* destination styles finish */
