@@ -745,6 +745,7 @@ html {
   justify-content: space-between;
   /* align-items: center; */
   height: 1042px;
+  margin-bottom: 80px;
 }
 
 .dest__title {
@@ -863,3 +864,120 @@ html {
   color: #ffffff;
 }
 /* destination styles finish */
+
+/*stories start */
+.story__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  height: 1322px;
+  width: 1201px;
+  margin-left: 119px;
+  z-index: 10;
+  position: relative;
+}
+
+.story__transp {
+  height: 1270px;
+  width: 1440px;
+  /* transform:translateY(0%); */
+  margin-top: 93px;
+  position: absolute;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.story__header {
+  text-align: center;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  margin-bottom: 80px;
+
+  /* identical to box height */
+
+  color: #f2785c;
+}
+
+.story__cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 1690px;
+}
+
+.story__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  height: 250px;
+}
+
+.story__card-img {
+  width: 400px;
+  height: 250px;
+  filter: drop-shadow(0px 4px 4px #0d606f);
+  border-radius: 16px;
+}
+.story__card-thailand {
+  background: url(/assets/img/thailand.jpg) no-repeat;
+}
+.story__card-utah {
+  background: url(/assets/img/utah.jpg) no-repeat;
+}
+.story__card-mountain {
+  background: url(/assets/img/mountain.jpg) no-repeat;
+}
+.story__card-journey {
+  background: url(/assets/img/journey.jpg) no-repeat;
+}
+.story__card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  width: 760px;
+  gap: 24px;
+}
+
+.story__card-header {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+
+  /* identical to box height */
+
+  color: #0d606f;
+}
+
+.story__card-content {
+  width: 760px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0d606f;
+}
+
+.story__card-link{
+  /* text-decoration: none; */
+  font-family: "Aleo";
+  /* font-style: bold; */
+  font-weight: 700;
+  color: #0d606f
+}
+/*stories finish */
+
+/* bg styles start */
+.bg {
+  height: 3735px;
+  background: url(./assets/img/boat.jpg) no-repeat bottom;
+}
+
+/* bg styles finish */
