@@ -1,1 +1,1 @@
-https://petelin79.github.io/rsschool-cv/cv
+https://github.com/petelin79/rsschool-cv/tree/travel
