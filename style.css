@@ -869,13 +869,14 @@ html {
 .story__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* align-items: center; */
   height: 1322px;
   width: 1201px;
   margin-left: 119px;
-  z-index: 10;
+  /* z-index: 10; */
   position: relative;
+  margin-bottom: 60px;
 }
 
 .story__transp {
@@ -884,7 +885,7 @@ html {
   /* transform:translateY(0%); */
   margin-top: 93px;
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   background: rgba(255, 255, 255, 0.7);
 }
 
@@ -902,10 +903,10 @@ html {
   color: #f2785c;
 }
 
-.story__cards{
+.story__cards {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 1690px;
 }
 
@@ -938,7 +939,7 @@ html {
 .story__card-text {
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   width: 760px;
   gap: 24px;
 }
@@ -964,13 +965,17 @@ html {
   line-height: 24px;
   color: #0d606f;
 }
+/* 
+.story__card-content:last-child{
+  margin-bottom: 70px;
+} */
 
-.story__card-link{
+.story__card-link {
   /* text-decoration: none; */
   font-family: "Aleo";
   /* font-style: bold; */
   font-weight: 700;
-  color: #0d606f
+  color: #0d606f;
 }
 /*stories finish */
 
@@ -981,3 +986,34 @@ html {
 }
 
 /* bg styles finish */
+
+/* footer start */
+.footer {
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 728.96px;
+  height: 33.65px;
+  margin-left: 590px;
+}
+
+.footer__disclaimer {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
+
+.footer_social {
+  display: flex;
+  justify-content: space-between;
+  width: 140.96px;
+  height: 33.65px;
+}
+
+/* footer finish */
