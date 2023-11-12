@@ -60,24 +60,24 @@ Results-driven professional with a proven track record of achieving goals, and a
 
 ```
 def can_exit(matrix: list) -> bool:
-    
+
     def inner(row, col):
         for row,col in ((row,col-1), (row-1,col), (row,col+1), (row+1,col)):
             if not temp_matrix[row][col]:
                 temp_matrix[row][col] = 1
                 inner(row,col)
-                
+
     if matrix[-1][-1]:
         return False
-            
+
     temp_matrix: list = [[char for char in row] for row in matrix]
     for col in temp_matrix:
         col.insert(0,1)
         col.append(1)
     temp_matrix.append([1 for _ in temp_matrix[0]])
     temp_matrix.insert(0,[1 for _ in temp_matrix[0]])
-    
-    inner(1,1)   
+
+    inner(1,1)
     return temp_matrix[-2][-2] == True
 
 ```
